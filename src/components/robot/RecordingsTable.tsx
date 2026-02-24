@@ -31,7 +31,6 @@ import {
   PlayCircle,
   Settings,
   Power,
-  ContentCopy,
   MoreHoriz,
   Refresh
 } from "@mui/icons-material";
