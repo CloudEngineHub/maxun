@@ -228,7 +228,7 @@ export const NavBar: React.FC<NavBarProps> = ({
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
               {!isRecording ? (
                 <>
-                  <Button href="https://maxun.dev/autorobots" target="_blank" sx={{
+                  <IconButton href="https://maxun.dev/autorobots" target="_blank" sx={{
                     display: 'flex',
                     alignItems: 'center',
                     borderRadius: '5px',
@@ -240,7 +240,7 @@ export const NavBar: React.FC<NavBarProps> = ({
                     }
                   }}>
                     <Typography variant="body1">Browse Auto Robots</Typography>
-                  </Button>
+                  </IconButton>
                   {/* <iframe 
                   src="https://ghbtns.com/github-btn.html?user=getmaxun&repo=maxun&type=star&count=true&size=large" 
                   // frameBorder="0" 
