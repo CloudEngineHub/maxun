@@ -241,14 +241,6 @@ export const NavBar: React.FC<NavBarProps> = ({
                   }}>
                     <Typography variant="body1">Browse Auto Robots</Typography>
                   </IconButton>
-                  {/* <iframe 
-                  src="https://ghbtns.com/github-btn.html?user=getmaxun&repo=maxun&type=star&count=true&size=large" 
-                  // frameBorder="0" 
-                  // scrolling="0" 
-                  // width="170" 
-                  // height="30" 
-                  // title="GitHub">
-                  // </iframe>*/}
                   <IconButton onClick={handleMenuOpen} sx={{
                     display: 'flex',
                     alignItems: 'center',
