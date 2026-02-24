@@ -30,10 +30,6 @@ const FormContainer = styled(Box)({
     marginLeft: '30px'
 });
 
-const FormControl = styled(Box)({
-    marginBottom: '16px',
-});
-
 const ProxyForm: React.FC = () => {
     const { t } = useTranslation();
     const [proxyConfigForm, setProxyConfigForm] = useState({
