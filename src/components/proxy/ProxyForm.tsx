@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { styled } from '@mui/system';
 import {
     Alert,
     AlertTitle,
@@ -22,13 +21,6 @@ import {
 import { sendProxyConfig, getProxyConfig, testProxyConfig, deleteProxyConfig } from '../../api/proxy';
 import { useGlobalInfoStore } from '../../context/globalInfo';
 import { useTranslation } from 'react-i18next';
-
-const FormContainer = styled(Box)({
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '16px',
-    marginLeft: '30px'
-});
 
 const ProxyForm: React.FC = () => {
     const { t } = useTranslation();
@@ -263,8 +255,7 @@ const ProxyForm: React.FC = () => {
                         </Box>
                     ))}
             </Box>
-
-            {/* Instructions Section */}
+         
             <Box sx={{
                 flex: 1,
                 minWidth: 0,
