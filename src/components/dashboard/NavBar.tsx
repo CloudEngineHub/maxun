@@ -228,7 +228,7 @@ export const NavBar: React.FC<NavBarProps> = ({
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
               {!isRecording ? (
                 <>
-                <IconButton href="https://maxun.dev/autorobots" target="_blank" sx={{
+                  <IconButton href="https://maxun.dev/autorobots" target="_blank" sx={{
                     display: 'flex',
                     alignItems: 'center',
                     borderRadius: '5px',
@@ -236,7 +236,7 @@ export const NavBar: React.FC<NavBarProps> = ({
                     marginRight: '20px',
                     '&:hover': {
                       background: 'inherit',
-                      color: '#0000008A'
+                      color: darkMode ? '#ffffff' : '#0000008A',
                     }
                   }}>
                     <Typography variant="body1">Browse Auto Robots</Typography>
