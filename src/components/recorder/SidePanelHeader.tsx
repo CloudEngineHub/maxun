@@ -22,15 +22,6 @@ export const SidePanelHeader = ({ onPreviewClick }: SidePanelHeaderProps) => {
         enableStepping={(isPaused) => setSteppingIsDisabled(!isPaused)} 
         onPreviewComplete={onPreviewClick}
       />
-      {/* <Button
-       variant='outlined'
-       disabled={steppingIsDisabled}
-       onClick={handleStep}
-       sx={{marginLeft:'15px'}}
-     >
-       step
-       <FastForward/>
-     </Button> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { WhereWhatPair, WorkflowFile } from "maxun-core";
 import { emptyWorkflow } from "../shared/constants";
-import { default as axios, AxiosResponse } from "axios";
+import { default as axios } from "axios";
 import { apiUrl } from "../apiConfig";
 
 export const getActiveWorkflow = async (id: string): Promise<WorkflowFile> => {

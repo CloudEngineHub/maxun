@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { useSocketStore } from '../../context/socket';
 import { Button } from '@mui/material';
 import { GenericModal } from '../ui/GenericModal';
@@ -86,7 +86,6 @@ export const BrowserWindow = () => {
     const [fields, setFields] = useState<Record<string, TextStep>>({});
     const [paginationSelector, setPaginationSelector] = useState<string>('');
 
-    const highlighterUpdateRef = useRef<number>(0);
     const [isCachingChildSelectors, setIsCachingChildSelectors] = useState(false);
     const [cachedListSelector, setCachedListSelector] = useState<string | null>(
         null
