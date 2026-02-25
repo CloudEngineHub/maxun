@@ -498,7 +498,16 @@ export default class Interpreter extends EventEmitter {
       
         await this.ensureScriptsLoaded(page);
       
-        const scrapeResult = await page.evaluate((schemaObj) => window.scrapeSchema(schemaObj), schema);
+      const normalizedSchema = Object.fromEntries(
+          Object.entries(schema).map(([key, value]) => [
+            key,
+            typeof value === 'string'
+              ? { selector: value, tag: '', attribute: 'innerText', shadow: '' }
+              : value,
+          ])
+        );
+
+        const scrapeResult = await page.evaluate((schemaObj) => window.scrapeSchema(schemaObj), normalizedSchema);
       
         if (!this.cumulativeResults || !Array.isArray(this.cumulativeResults)) {
           this.cumulativeResults = [];
