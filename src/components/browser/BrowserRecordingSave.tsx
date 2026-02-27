@@ -5,7 +5,6 @@ import { useGlobalInfoStore } from '../../context/globalInfo';
 import { useActionContext } from '../../context/browserActions';
 import { useBrowserSteps } from '../../context/browserSteps';
 import { stopRecording } from "../../api/recording";
-import { useNavigate } from 'react-router-dom';
 import { GenericModal } from "../ui/GenericModal";
 import { useTranslation } from 'react-i18next';
 import { emptyWorkflow } from '../../shared/constants';
@@ -18,7 +17,6 @@ const BrowserRecordingSave = () => {
   const [openResetModal, setOpenResetModal] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const { recordingName, browserId, initialUrl, setRecordingUrl, setBrowserId, notify, setCurrentWorkflowActionsState, resetInterpretationLog } = useGlobalInfoStore();
-  const navigate = useNavigate();
 
   const { socket } = useSocketStore();
 

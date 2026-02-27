@@ -1,6 +1,5 @@
 import { Box, Button, Stack, Typography, CircularProgress } from "@mui/material";
 import React, { useCallback, useEffect, useState } from "react";
-import { interpretCurrentRecording } from "../../api/recording";
 import { useSocketStore } from "../../context/socket";
 import { useGlobalInfoStore } from "../../context/globalInfo";
 import { GenericModal } from "../ui/GenericModal";

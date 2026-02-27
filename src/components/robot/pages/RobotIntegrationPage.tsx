@@ -793,7 +793,7 @@ export const RobotIntegrationPage = ({
                 const basePath = robotPath === "prebuilt-robots" ? "/prebuilt-robots" : "/robots";
                 navigate(`${basePath}/${recordingId}/integrate/webhook`);
               }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/webhook.svg" alt="Webhook" style={{ margin: "6px" }} />
+                <img src="/svg/webhook.svg" alt="Webhooks" style={{ margin: "6px" }} />
                 Webhooks
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/mcp/setup", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
@@ -801,27 +801,27 @@ export const RobotIntegrationPage = ({
                 MCP
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/integrations/langchain", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/langchain.svg" alt="MCP" style={{ margin: "6px" }} height={150} width={100} />
+                <img src="/svg/langchain.svg" alt="LangChain" style={{ margin: "6px" }} height={150} width={100} />
                 LangChain
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/integrations/langgraph", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/langchain.svg" alt="MCP" style={{ margin: "6px" }} height={150} width={100} />
+                <img src="/svg/langgraph.svg" alt="LangGraph" style={{ margin: "6px" }} height={150} width={100} />
                 LangGraph
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/integrations/vercel-ai-sdk", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/vercel.svg" alt="MCP" style={{ margin: "6px" }} height={150} width={100} />
+                <img src="/svg/vercel.svg" alt="Vercel AI SDK" style={{ margin: "6px" }} height={150} width={100} />
                 Vercel AI SDK
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/integrations/openai", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/openai.svg" alt="MCP" style={{ margin: "6px" }} height={150} width={100} />
+                <img src="/svg/openai.svg" alt="Open AI SDK" style={{ margin: "6px" }} height={150} width={100} />
                 Open AI SDK
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/integrations/mastra", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/mastra.svg" alt="MCP" style={{ margin: "6px" }} height={150} width={100} />
+                <img src="/svg/mastra.svg" alt="Mastra" style={{ margin: "6px" }} height={150} width={100} />
                 Mastra
               </Button>
               <Button variant="outlined" onClick={() => { window.open("https://docs.maxun.dev/integrations/llamaindex", "_blank", "noopener,noreferrer"); }} style={{ display: "flex", flexDirection: "column", alignItems: "center", background: 'white', color: '#ff00c3' }}>
-                <img src="/svg/llamaindex.svg" alt="MCP" style={{ margin: "6px" }} height={150} width={100} />
+                <img src="/svg/llamaindex.svg" alt="LlamaIndex" style={{ margin: "6px" }} height={150} width={100} />
                 LlamaIndex
               </Button>
             </div>

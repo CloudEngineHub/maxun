@@ -31,7 +31,6 @@ import {
   PlayCircle,
   Settings,
   Power,
-  ContentCopy,
   MoreHoriz,
   Refresh
 } from "@mui/icons-material";
@@ -48,10 +47,6 @@ declare global {
     openedRecordingWindow?: Window | null;
   }
 }
-
-/** TODO:
- *  1. allow editing existing robot after persisting browser steps
-*/
 
 interface Column {
   id: 'interpret' | 'name' | 'options' | 'schedule' | 'integrate' | 'settings';
